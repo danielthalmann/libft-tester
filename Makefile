@@ -41,7 +41,7 @@ lib:
 
 ${FUNCTIONS}: lib
 	${NORMINETTE} ${SRC_FOLDER}ft_atoi.c
-	${CC} ${COMPILE_FLAG} ${COMPILE_BSD_FLAG} $@_test.c faker.c -o ${NAME}
+	${CC} ${COMPILE_FLAG} ${COMPILE_BSD_FLAG} src/$@_test.c src/faker.c -o ${NAME}
 	./test
 
 test: ${FUNCTIONS}
